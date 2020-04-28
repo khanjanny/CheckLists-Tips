@@ -42,11 +42,6 @@ wfuzz  --sc 200 -z file,ok -z file,favicon.txt FUZZ/FUZ2Z
 #GREP DIFFERENCES
 grep -Fxvf  domain domains > new
 
-#FUZZ BURP REQUEST
-ffuf -request req -request-proto https -w '/usr/share/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt'   -mc 200,301 -recursion -recursion-depth 2
-
-FUZZ LIST OF URL 
-ffuf -w "urlsfilename:DOMAIN" -w '/usr/share/wordlists/bruteforce-lists/config.txt'  -u DOMAIN/FUZZ -t 
 
 #CAT URI WITH PARAMS AND FUZZ
  cat urlparams | qsreplace -a | xarg -I '%' sh -c 'xss.py -v 4 -u "%"'
