@@ -1,0 +1,8 @@
+OPEN REDIRECT ORANGE
+#@evil.com/
+:evil.com:80/
+https://foo@evil.com:80@evil.com:80/
+https://foo@evil.com @evil.com:80/
+http://127.0.0.1/tfoo.google.com
+http://127.0.0.1%09foo.google.com
+http://127.0.0.1%2509foo.google.com
