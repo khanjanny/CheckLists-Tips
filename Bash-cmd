@@ -16,6 +16,9 @@ detox -r apk/
 #DELETE DUPE FILES
 fdupes -r .
 
+#CAT ALL FILE WITH SAME NAME AND AGGREGATE
+find . -name '*.txt' -exec cat {} \; | tee out.txt
+
 
 #REMOVE EMPTY lines from file
 sed '/^$/d' main.txt > out
