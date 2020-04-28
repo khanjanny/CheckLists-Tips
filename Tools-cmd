@@ -1,0 +1,8 @@
+#FUZZ USING ALL JAELES SIGNATURES
+jaeles scan  -c 50 -s '/tmp/jaeles-signatures/.*' -U hosts | tee results
+
+#FUZZ BURP REQUEST
+ffuf -request burprequest -request-proto https -w '/usr/share/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt'   -mc 200,301 -recursion -recursion-depth 2
+
+FUZZ LIST OF URL 
+ffuf -w "urlsfilename:DOMAIN" -w '/usr/share/wordlists/bruteforce-lists/config.txt'  -u DOMAIN/FUZZ -t 
