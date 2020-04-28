@@ -1,0 +1,55 @@
+#"find all lines that start with # and delete them, leaving everything else."
+ sed '/^#/ d'
+ 
+Get text between brackets()
+ awk -F '[()]' '{print $2}'
+ 
+#FOR EACH LINE DO
+while read in; do favhash "$in"; done < file.txt
+
+#move dir to another
+find ~/Downloads/ -maxdepth 1 -type f -print0 | xargs -0 mv -t ~/Videos
+
+#REPLACE space in file name
+detox -r apk/
+
+#DELETE DUPE FILES
+fdupes -r .
+
+
+#REMOVE EMPTY lines from file
+sed '/^$/d' main.txt > out
+
+
+#REMOVE LINE CONTAINS STRING
+sed -i '/stringhere/d'  file
+
+#REMOVE LINE NOT CONTAINS STRING
+sed '/^stringhere/!d' file
+sed -n '/^stringhere/p' file
+
+Clean up Tomnomnom waybackmachine output
+sed '/.png/d;/.jpg/d;/.jpeg/d;/.gif/d;/.css/d;/.svg/d;' wburls > 1 && sort -u 1 | tee 2 | grep "=" > out
+
+#FOREACH FILE DO
+for f in *.xapk; do diggy $f; done
+
+
+#wfuz list url against single only 200 code
+wfuzz  --sc 200 -z file,ok -z file,favicon.txt FUZZ/FUZ2Z    
+
+
+#GREP DIFFERENCES
+grep -Fxvf  domain domains > new
+
+#FUZZ BURP REQUEST
+ffuf -request req -request-proto https -w '/usr/share/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt'   -mc 200,301 -recursion -recursion-depth 2
+
+FUZZ LIST OF URL 
+ffuf -w "urlsfilename:DOMAIN" -w '/usr/share/wordlists/bruteforce-lists/config.txt'  -u DOMAIN/FUZZ -t 
+
+#CAT URI WITH PARAMS AND FUZZ
+ cat urlparams | qsreplace -a | xarg -I '%' sh -c 'xss.py -v 4 -u "%"'
+
+#RECON SUBS
+domain=`echo "base.be"` | curl 'https://rapiddns.io/subdomain/'$domain'?full=1&down=1#exportData()' |  grep -Eo "(http|https)://[a-zA-Z0-9./?=_-]*" | sort -u >> recon.txt
